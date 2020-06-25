@@ -7,7 +7,15 @@ use Illuminate\Http\Request;
 
 class BaseController extends Controller
 {
-    //
+    /**
+    *@SWG\Swagger(
+    *  basePath="/api",
+    *  @SWG\Info(
+    *    title="Week-13-Assignment",
+    *    version="1.0.0"
+    *    )
+    * )
+    */
     public function sendResponse($result, $message)
     {
       $response = [

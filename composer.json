@@ -6,6 +6,12 @@
         "framework",
         "laravel"
     ],
+    "repositories": [
+          {
+          "type": "vcs",
+          "url": "git@github.com:InfyOmLabs/swaggervel.git"
+          }
+      ],
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
@@ -16,7 +22,8 @@
         "laravel/passport": "^9.2",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
-        "laravelcollective/html": "^6.1"
+        "laravelcollective/html": "^6.1",
+        "appointer/swaggervel": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

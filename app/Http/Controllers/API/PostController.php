@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\BaseController as BaseController;
 use Illuminate\Http\Request;
+use App\Models\Post;
+use App\Http\Requests\PostRequest;
 
-class PostController extends Controller
+class PostController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -15,6 +17,7 @@ class PostController extends Controller
     public function index()
     {
         //
+
     }
 
     /**
