@@ -232,6 +232,9 @@ class CategoryController extends BaseController
     public function show($id)
     {
         //
+        $category = Category::findOrFail($id);
+
+        return $this->sendResponse($category->toArray(), "Category was shown successfully");
     }
 
     /**

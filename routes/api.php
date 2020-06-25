@@ -22,6 +22,7 @@ Route::group([
   'middleware' => 'api_client',
   'namespace' => 'API'
 ], function(){
-   Route::resource('category', 'CategoryController');
-   // Route::resource('/post', 'API/PostController');
+  Route::resource('post', 'PostController');
+  Route::resource('category', 'CategoryController');
+
 });

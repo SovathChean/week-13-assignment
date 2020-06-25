@@ -25,7 +25,8 @@ class PostRequest extends FormRequest
     {
         return [
             'name' => 'required|min:4',
-            'category_id' => 'required'
+            'category_id' => 'required',
+            'creator_id' => 'required'
         ];
     }
 }
